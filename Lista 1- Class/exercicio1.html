@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto</title>
+</head>
+<body>
+    <script>
+        class Produto {
+            nome;
+            preco;
+            quantidade
+            constructor(nome, preco, quantidade) {
+                this.nome = nome;
+                this.preco = preco;
+                this.quantidade = quantidade;
+            }
+
+            calcularTotal() {
+                return this.preco * this.quantidade;
+            }
+        }
+
+        let produto1 = new Produto("Polo lacoste", 700.00, 2);
+        let total = produto1.calcularTotal();
+    
+        console.log(produto1)
+        console.log(`O valor do produto é: ${produto1.calcularTotal()}`)
+
+      
+    </script>
+</body>
+</html>
