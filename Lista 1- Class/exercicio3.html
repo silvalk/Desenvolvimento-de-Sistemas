@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aluno</title>
+</head>
+<body>
+    <script>
+        class Aluno {
+            constructor(nome, nota1, nota2) {
+                this.nome = nome;
+                this.nota1 = nota1;
+                this.nota2 = nota2;
+            }
+
+            calcularMedia() {
+                return (this.nota1 + this.nota2) / 2;
+            }
+        }
+
+        let Aluno1 = new Aluno("Lukinha", 8.5, 7.5);
+        let media = Aluno1.calcularMedia();
+        console.log(Aluno1)
+        console.log(`A média é:  ${Aluno1.calcularMedia()}`)
+    </script>
+</body>
+</html>
